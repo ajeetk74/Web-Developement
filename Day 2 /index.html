@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Event Registration Form</h1>
+    <form>
+      <!-- Personal Details -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+      </fieldset>
+      <br>
+      <!-- Event Details -->
+      <fieldset>
+        <legend>Event Details</legend>
+        <label for="event">Select Event:</label>
+        <select id="event" name="event" required>
+          <option value="">--Select--</option>
+          <option value="workshop">Workshop</option>
+          <option value="seminar">Seminar</option>
+          <option value="webinar">Webinar</option>
+        </select><br><br>
+        <label for="date">Event Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <!-- 6 Dropdowns -->
+        <label for="session1">Session 1:</label>
+        <select id="session1" name="session1">
+          <option value="">--Select--</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+        </select><br><br>
+        <label for="session2">Session 2:</label>
+        <select id="session2" name="session2">
+          <option value="">--Select--</option>
+          <option value="beginner">Beginner</option>
+          <option value="advanced">Advanced</option>
+        </select><br><br>
+        <label for="meal">Meal Preference:</label>
+        <select id="meal" name="meal">
+          <option value="">--Select--</option>
+          <option value="veg">Vegetarian</option>
+          <option value="nonveg">Non-Vegetarian</option>
+        </select><br><br>
+        <label for="tshirt">T-Shirt Size:</label>
+        <select id="tshirt" name="tshirt">
+          <option value="">--Select--</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">XL</option>
+        </select><br><br>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+          <option value="">--Select--</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="bangalore">Bangalore</option>
+        </select><br><br>
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+          <option value="">--Select--</option>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="upi">UPI</option>
+        </select><br><br>
+      </fieldset>
+      <br>
+      <!-- Feedback -->
+      <label for="feedback">Feedback / Comments:</label><br>
+      <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea><br><br>
+      <!-- Buttons -->
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      
