@@ -1,0 +1,98 @@
+.App{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  text-align: center;
+  color:#333;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+label{
+  font-weight: bold;
+  color:#555;
+}
+
+input,textarea , select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.checkbox-label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.error{
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220,53,69,0.25);
+}
+
+.error-message{
+  color:#dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.character-count{
+  font-size: 12px;
+  color:#888;
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+}
+
+.character-count.warning{
+    color:#ffc107;
+    font-weight: bold;
+}
+
+  button[type="submit"]{
+    padding: 10px;
+    background-color: #007BFF;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover{
+    background-color: #0056b3;
+}
+button[type="submit"]:disabled{
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
