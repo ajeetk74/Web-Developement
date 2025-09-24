@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="practisestyle.css">
+    <h1>Event Registration Form</h1>
+    <form>
+      <!---Personal Details-->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <!--Event Details-->
+        <legend>Event Details</legend>
+        <label for="event">Select Event</label>
+        <select name="event" id="event"required>
+          <option value="">--Select--</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Webinar">Webinar</option>
+          <option value="Seminar">Seminar</option>
+        </select><br><br>
+        <label for="date">Event Date:</label>
+        <input type="datetime-local" name="date" id="date"required><br><br>
+        <!-- 3 Dropdowns -->
+<label for="session">Session:</label>
+<select id="session" name="session">
+  <option value="">--Select--</option>
+  <option value="morning">Morning</option>
+  <option value="afternoon">Afternoon</option>
+</select><br><br>
+
+<label for="meal">Meal Preference:</label>
+<select id="meal" name="meal">
+  <option value="">--Select--</option>
+  <option value="veg">Vegetarian</option>
+  <option value="nonveg">Non-Vegetarian</option>
+</select><br><br>
+
+<label for="city">City:</label>
+<select id="city" name="city">
+  <option value="">--Select--</option>
+  <option value="delhi">Delhi</option>
+  <option value="mumbai">Mumbai</option>
+  <option value="bangalore">Bangalore</option>
+</select><br><br>
+</fieldset>
+<br>
+<!--Feedback-->
+<label for="feedback">Feedback / Comments:</label><br>
+<textarea name="feedback" id="feedback" rows="4" cols="40"></textarea><br><br>
+<!--Buttons-->
+<input type="submit" value="Submit">
+<input type="Reset" value="Reset">
+    </form>
+  </body>
+</html>
